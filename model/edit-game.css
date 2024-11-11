@@ -1,0 +1,118 @@
+/* General page styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the form */
+.form {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.error-message {
+    color: #ff5c5c;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input fields and buttons */
+input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background: #f4f4f4;
+    color: #333;
+    width: 100%;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border: 1px solid #2575fc;
+    background: #fff;
+}
+
+button, input[type="submit"] {
+    padding: 12px;
+    background-color: #2575fc;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #1a5bb8;
+}
+
+/* Form input group styles */
+form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input[readonly] {
+    background: #ddd;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+    .form {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    input[type="text"] {
+        font-size: 0.9rem;
+    }
+    button, input[type="submit"] {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+/* For even smaller screens */
+@media (max-width: 480px) {
+    .form {
+        padding: 15px;
+    }
+    h1 {
+        font-size: 1.3rem;
+    }
+    input[type="text"] {
+        font-size: 0.85rem;
+    }
+}

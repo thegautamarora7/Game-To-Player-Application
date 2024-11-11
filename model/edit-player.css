@@ -1,0 +1,153 @@
+/* General page styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #FF5F6D, #FFC371);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+/* Form container */
+.form {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Header styles */
+h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Error and success messages */
+p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.error-message {
+    color: #FF5F5F;
+}
+
+.success-message {
+    color: #32CD32;
+}
+
+/* Navigation links */
+.form p a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #2575fc;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.form p a:hover {
+    background-color: #1a5bb8;
+}
+
+/* Form input styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input[type="text"] {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background: #f4f4f4;
+    color: #333;
+    width: 100%;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border: 1px solid #2575fc;
+    background: #fff;
+}
+
+/* Submit button */
+input[type="submit"] {
+    padding: 12px;
+    background-color: #2575fc;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #1a5bb8;
+}
+
+/* Read-only input fields */
+input[readonly] {
+    background: #ddd;
+    color: #666;
+}
+
+/* Responsive design for mobile and tablet */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .form {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    input[type="text"] {
+        font-size: 0.9rem;
+    }
+
+    input[type="submit"] {
+        font-size: 1rem;
+    }
+
+    .form p a {
+        font-size: 0.9rem;
+    }
+}
+
+/* For even smaller screens (smartphones) */
+@media (max-width: 480px) {
+    .form {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    input[type="text"] {
+        font-size: 0.85rem;
+    }
+
+    input[type="submit"] {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
